@@ -1,0 +1,34 @@
+def calcula_retangulo():
+  base_ret = float(input('Digite a base do retângulo:'))
+  altura_ret = float(input('Digite a altura do retângulo:'))
+  area_ret = (base_ret*altura_ret)
+  print(f'A área do retângulo é {area_ret}')
+
+def calcula_triangulo():
+  base_tri = float(input('Digite a base do triângulo:'))
+  altura_tri = float(input('Digite a altura do triângulo:'))
+  area_tri = (base_tri * altura_tri)/2
+  print(f'A área do triângulo é {area_tri}')
+
+escolher_op = 1
+
+while escolher_op:
+  opcao = int(input('''Calculadora de formas geométricas
+Qual figura você deseja calcular a área?
+1. Retângulo
+2. Triângulo
+0. Sair
+------------------------------------------------------------'''))
+  if opcao == 1:
+    calcula_retangulo()
+
+  elif opcao == 2:
+    calcula_triangulo()
+
+  else:
+    break
+
+
+
+
+
