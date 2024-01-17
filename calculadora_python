@@ -1,0 +1,54 @@
+#operação somar
+def soma():
+  termo1 = int(input('Digite o primeiro termo da soma: '))
+  termo2 = int(input('Digite o segundo termo da soma: '))
+  resultado = termo1 + termo2
+  print(f'O resultado da soma é: {resultado}')
+
+#operação subtrair
+def subtracao():
+  termo1 = int(input("Digite o primeiro termo da subtração: "))
+  termo2 = int(input('Digite o segundo termo da subtração: '))
+  resultado = termo1 - termo2
+  print(f'O resultado da subtração é: {resultado}')
+
+#operação multiplicar
+def multiplicacao():
+  termo1 = int(input("Digite o primeiro termo da multiplicação: "))
+  termo2 = int(input('Digite o segundo termo da multiplicação: '))
+  resultado = termo1 * termo2
+  print(f'O resultado da multiplicação é: {resultado}')
+
+#operação divisão
+def divisao():
+  termo1 = int(input("Digite o primeiro termo da divisão: "))
+  termo2 = int(input('Digite o segundo termo da divisão: '))
+  resultado = termo1 / termo2
+  print(f'O resultado da divisão é: {resultado}')
+
+escolha_operacao = 1
+
+while escolha_operacao:
+   escolha_operacao = int(input('''
+Calculadora pessoal, escolha uma operação:
+1. Somar
+2. Subtrair
+3. Multiplicar
+4. Dividir
+0. Sair
+'''))
+
+   if escolha_operacao == 1:
+    soma()
+
+   elif escolha_operacao == 2:
+    subtracao()
+
+   elif escolha_operacao == 3:
+    multiplicacao()
+
+   elif escolha_operacao == 4:
+    divisao()
+
+   else:
+    break
