@@ -1,2 +1,2 @@
-# Projetos
+# Calculadora Python
  Estudos sobre Python
